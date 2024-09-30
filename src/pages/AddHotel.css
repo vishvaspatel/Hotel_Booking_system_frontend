@@ -1,0 +1,91 @@
+/* src/pages/AddHotel.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Light background for contrast */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.add-hotel-container {
+    background-color: rgba(40, 167, 69, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px; /* Limit max width for better mobile experience */
+    text-align: center;
+}
+
+h1 {
+    color: rgb(255, 255, 255); /* Color for the heading */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between fields */
+    text-align: left; /* Align labels to the left */
+}
+
+label {
+    font-weight: bold;
+    color: rgb(255, 255, 255); /* Label color */
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+input:focus {
+    border-color: rgba(40, 167, 69, 0.8); /* Border color on focus */
+    outline: none;
+}
+
+.addhotel {
+    background-color: rgb(255, 255, 255); /* Button color */
+    color: rgba(40, 167, 69, 0.8); /* Text color on button */
+    border: none;
+    border-radius: 5px;
+    padding: 12px 0; /* Adjusted padding for height consistency */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Full width for button */
+    margin-top: 10px; /* Space above button */
+}
+
+.addhotel:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Hover effect */
+}
+
+.error-message {
+    color: red; /* Error message color */
+    margin-top: 10px; /* Space above error message */
+}
+
+
+/* Add this to your existing CSS file */
+
+.logout-button {
+    display: block; /* Makes the button a block element */
+    margin: 20px auto; /* Center the button horizontally */
+    width: fit-content; /* Adjust the width to fit the content */
+    padding: 12px 20px; /* Add some padding for visual appeal */
+    background-color: rgba(40, 167, 69, 0.8); /* Same background color as the container */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.logout-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

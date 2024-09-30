@@ -1,0 +1,116 @@
+.user-page-container {
+    padding: 20px; /* Padding for the container */
+    background-color: rgba(240, 240, 240, 0.8); /* Light background */
+}
+
+.dashboard-header {
+    background-color: rgba(40, 167, 69, 0.8); /* Header background color */
+    color: white; /* Text color */
+    padding: 20px; /* Padding for header */
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.header-title {
+    font-size: 2rem; /* Font size for title */
+    margin: 0; /* Remove default margin */
+}
+
+.header-buttons {
+    display: flex; /* Align buttons horizontally */
+}
+
+.action-button {
+    background-color: #28a745; /* Button color */
+    color: white; /* Button text color */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 12px 25px; /* Padding for buttons */
+    margin-left: 10px; /* Space between buttons */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.action-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.section-title {
+    font-size: 30px; /* Font size for section titles */
+    margin: 20px 0; /* Space above and below section titles */
+}
+
+.hotel-list,
+.booking-list {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.hotel-item {
+    margin-bottom: 10px; /* Space between items */
+    padding: 20px; /* Padding for items */
+    background-color: #fff; /* White background for items */
+    border-radius: 5px; /* Rounded corners for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease; /* Smooth scale effect on hover */
+}
+
+.hotel-item:hover {
+    transform: scale(1.02); /* Scale effect on hover */
+}
+
+.booking-item {
+    margin-bottom: 10px; /* Space between items */
+    padding: 20px; /* Padding for items */
+    background-color: #fff; /* White background for items */
+    border-radius: 5px; /* Rounded corners for items */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.icon {
+    margin-right: 8px; /* Space between the icon and text */
+    vertical-align: middle; /* Align icons with text */
+    font-size: 1.2em; /* Adjust size of icons */
+}
+
+.error-message {
+    color: red;
+}
+
+.book-button{
+    background-color: #28a745; /* Green color */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 30px; /* Rounded corners */
+    padding: 12px 25px; /* Padding for the button */
+    margin-top: 10px; /* Space above the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 18px; /* Font size */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.book-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.book-button {
+    background-color: #28a745  !important; /* Green color */
+    color: white !important; /* White text color */
+    border: none !important; /* No border */
+    border-radius: 30px !important; /* Rounded corners */
+    padding: 12px 25px !important; /* Padding for the button */
+    margin-top: 10px !important; /* Space above the button */
+    cursor: pointer !important; /* Pointer cursor on hover */
+    font-size: 18px !important; /* Font size */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease !important; /* Smooth transition */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2) !important; /* Shadow for depth */
+}
+
+.book-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

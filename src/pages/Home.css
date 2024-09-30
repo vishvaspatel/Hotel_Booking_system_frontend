@@ -1,0 +1,484 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Attractive Header Section */
+.header {
+  background-image: url('https://via.placeholder.com/1500x500'); /* Replace with actual image */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  color: white;
+  display: flex;
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;  /* Centers vertically */
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; /* Ensure header takes full width */
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  text-align: center; /* Ensure the text is centered */
+}
+
+.header-buttons {
+  margin-top: 20px;
+}
+
+.header button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header button:hover {
+  background-color: #218838;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.header button:focus {
+  outline: none;
+}
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Hotel List */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: calc(33% - 30px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+li strong {
+  display: block;
+  font-size: 1.25rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+/* Styling for highlighted hotel details */
+li span {
+  display: block;
+  color: #6c757d;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+li span:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  li {
+      width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  li {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+      margin-top: 10px;
+  }
+}
+
+/* Home.css */
+
+/* Centering the header */
+h1 {
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+
+/* Home.css */
+
+/* Centering the header */
+h1 {
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+/* Create a flex container for the buttons */
+.header-buttons {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the buttons */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+/* Style the buttons */
+.homebut {
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* No border */
+  border-radius: 30px; /* Rounded corners */
+  padding: 12px 25px; /* Padding for button */
+  margin: 0 10px; /* Margin between buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 18px; /* Font size for buttons */
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Button hover effects */
+.homebut:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  box-shadow: 0 5px 15px rgba(0, 91, 187, 0.3); /* Shadow effect */
+}
+
+.homebut:focus {
+  outline: none; /* Remove outline on focus */
+}
+
+
+/* Available Hotels Section */
+h2 {
+  text-align: center; /* Center the heading */
+  margin: 30px 0; /* Add spacing above and below the heading */
+  font-size: 2rem; /* Increase font size */
+  color: #333; /* Change color for better visibility */
+}
+
+/* Style for the hotel list */
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center the items */
+}
+
+/* Style for individual hotel items */
+li {
+  background: white; /* Background color */
+  border: 1px solid #ddd; /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  padding: 20px; /* Padding inside the item */
+  margin: 15px; /* Margin around the item */
+  width: calc(30% - 30px); /* Width of the item */
+  box-sizing: border-box; /* Include padding and border in width */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+/* Hover effect for hotel items */
+li:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Style for hotel name and details */
+li strong {
+  display: block; /* Make it a block element */
+  font-size: 1.5rem; /* Font size for hotel name */
+  color: #007bff; /* Color for the hotel name */
+  margin-bottom: 10px; /* Space below hotel name */
+}
+
+/* Style for hotel details */
+li span {
+  display: block; /* Make it a block element */
+  color: #6c757d; /* Gray color for details */
+  margin-bottom: 8px; /* Space below each detail */
+  font-size: 0.95rem; /* Font size for details */
+}
+
+/* Last span has no margin */
+li span:last-child {
+  margin-bottom: 0; /* No margin for the last detail */
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  li {
+    width: calc(45% - 30px); /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  li {
+    width: 100%; /* Full width for mobile devices */
+  }
+}
+
+/* Overall Layout */
+header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Add some padding */
+}
+
+/* Header Title */
+.header-title {
+  font-size: 2.5rem; /* Adjust font size */
+  color: #333; /* Change color for better visibility */
+}
+
+/* Header Buttons */
+.header-buttons {
+  display: flex; /* Flexbox for button layout */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Align Buttons to the Right */
+.header-buttons button {
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 30px; /* Rounded corners */
+  padding: 12px 25px; /* Padding */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+/* Button Hover Effect */
+.header-buttons button:hover {
+  background-color: #007bff; /* Darker color on hover */
+}
+
+/* Available Hotels Section */
+h2 {
+  text-align: center; /* Center the heading */
+  margin: 30px 0; /* Add spacing above and below the heading */
+  font-size: 2rem; /* Increase font size */
+  color: #333; /* Change color for better visibility */
+}
+
+/* Other existing styles remain unchanged */
+
+/* Overall Layout */
+header {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center items vertically */
+  padding: 20px; /* Add some padding */
+  background-color: rgba(40, 167, 69, 0.8); /* Add a semi-transparent background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+}
+
+/* Header Title */
+.header-title {
+  font-size: 2.5rem; /* Adjust font size */
+  color: white; /* Change color for better visibility */
+}
+
+/* Header Buttons */
+.header-buttons {
+  display: flex; /* Flexbox for button layout */
+  gap: 10px; /* Space between buttons */
+}
+
+/* Align Buttons to the Right */
+.header-buttons button {
+  background-color: #28a745; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* Remove border */
+  border-radius: 30px; /* Rounded corners */
+  padding: 12px 25px; /* Padding */
+  cursor: pointer; /* Pointer on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Transition effect */
+}
+
+/* Button Hover Effect */
+.header-buttons button:hover {
+  background-color: #218838; /* Darker color on hover */
+}
+
+/* Available Hotels Section */
+h2 {
+  text-align: center; /* Center the heading */
+  margin: 30px 0; /* Add spacing above and below the heading */
+  font-size: 2rem; /* Increase font size */
+  color: #333; /* Change color for better visibility */
+}
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Section */
+.header {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Aligns items to the ends */
+  align-items: center; /* Centers vertically */
+  position: relative;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem; /* Adjusted for a better fit */
+  margin: 0; /* Removed default margin */
+  text-align: center;
+}
+
+.header-buttons {
+  display: flex; /* Aligns buttons horizontally */
+}
+
+.header button {
+  background-color: #28a745; /* Green buttons */
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 25px;
+  margin-left: 10px; /* Space between buttons */
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header button:hover {
+  background-color: #218838;
+}
+
+/* Hotel Section */
+h2 {
+  text-align: center; /* Center-aligning Available Hotels */
+  color: rgba(40, 167, 69, 0.8); /* Blue color for the subtitle */
+  margin: 20px 0; /* Spacing around the title */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+li {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 15px;
+  width: calc(33% - 30px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+li strong {
+  display: block;
+  font-size: 1.25rem;
+  color: rgba(40, 167, 69, 0.8); /* Hotel name in blue */
+  margin-bottom: 10px;
+}
+
+/* Styling for highlighted hotel details */
+li span {
+  display: block;
+  color: #6c757d; /* Grey color for details */
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+}
+
+li span:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 900px) {
+  li {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  li {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
