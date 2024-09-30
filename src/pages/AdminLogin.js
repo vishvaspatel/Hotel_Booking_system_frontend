@@ -12,8 +12,8 @@ function AdminLogin() {
     e.preventDefault();
     
     // Hardcoded credentials
-    const adminUsername = "Admin";
-    const adminPassword = "12345678";
+    const adminUsername = "admin@mydomain.com";
+    const adminPassword = "123456";
     
     if (email === adminUsername && password === adminPassword) {
       // Successful login, redirect to Admin Dashboard
